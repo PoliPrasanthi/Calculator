@@ -12,5 +12,5 @@ function clear1(){
 }
 
 function del1(){
-    res.value = parseInt(res.value/10)
+    res.value = res.value.slice(0, -1);
 }
