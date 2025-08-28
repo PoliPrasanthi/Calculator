@@ -12,5 +12,14 @@ function clear1(){
 }
 
 function del1(){
-    res.value = res.value.slice(0, -1);
+    // make sure value is a string
+    let str = res.value.toString();
+
+    // remove last character
+    str = str.slice(0, -1);
+
+    // update result box
+    res.value = str;
 }
+
+
